@@ -1,5 +1,5 @@
 # design-patterns
-Experiments with design patterns
+The objetive is to experiment with design patterns to interiorize the reaons behind each one to be more natural when to use each one.
 
 
 ## Behaviroal patterns
