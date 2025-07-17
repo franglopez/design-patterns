@@ -15,7 +15,7 @@ Enables runtime algorithm selection
 
 Great for replacing complex conditional logic
 
-```
+```java
 public interface PaymentStrategy {
     void pay(double amount);
 }
@@ -46,7 +46,7 @@ Better alternatives with reactive programming (Rx```, Project Reactor)
 
 Event-driven architectures
 
-```
+```java
 public class Order {
     private List<OrderObserver> observers = new ArrayList<>();
     
@@ -70,7 +70,7 @@ Useful in distributed systems (command-query separation)
 
 Microservices command pattern implementation
 
-```
+```java
 public interface Command {
     void execute();
     void undo();
@@ -102,7 +102,7 @@ Hook methods for customization
 
 Contrast with Strategy pattern (inheritance vs composition)
 
-```
+```java
 public abstract class ReportGenerator {
     // Template method
     public final Report generateReport() {
@@ -127,7 +127,7 @@ Spring Security filter chain
 
 Middleware patterns
 
-```
+```java
 public interface Handler {
     void setNext(Handler handler);
     void handle(Request request);
@@ -159,7 +159,7 @@ Useful for complex object structures (ASTs, document models)
 
 Compiler design applications
 
-```
+```java
 public interface Visitor {
     void visit(ElementA element);
     void visit(ElementB element);
@@ -186,7 +186,7 @@ Finite state machine implementations
 
 Thread state management
 
-```
+```java
 public interface State {
     void handle(Context context);
 }
@@ -215,7 +215,7 @@ Centralized control logic
 
 Message brokers as mediators
 
-```
+```java
 public interface Mediator {
     void notify(Component sender, String event);
 }
@@ -231,27 +231,3 @@ public class ConcreteMediator implements Mediator {
     }
 }
 ```
-Practical Considerations for Senior Developers
-Pattern Combinations: Real-world systems often combine multiple patterns
-
-Performance Implications: Understand tradeoffs (e.g., Visitor pattern overhead)
-
-Modern Alternatives: Consider reactive patterns, functional programming approaches
-
-Testing: How patterns affect testability (mocking, isolation)
-
-Concurrency: Thread-safety considerations in behavioral patterns
-
-Anti-patterns: When NOT to use certain patterns
-
-Senior developers should focus not just on implementation but also on:
-
-Pattern selection criteria
-
-Impact on system architecture
-
-Long-term maintenance implications
-
-Team understanding and onboarding
-
-Remember, patterns are tools, not goals - the most elegant solution isn't always the most maintainable or understandable for your team.
